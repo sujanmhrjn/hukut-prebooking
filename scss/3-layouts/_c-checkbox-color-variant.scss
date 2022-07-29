@@ -1,0 +1,52 @@
+.c-checkbox-color-variant{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input{
+        position: absolute;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        top:0;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    label{
+        height: 30px;
+        width:30px;
+        border:2px solid #fff;
+        display: block;
+        border-radius: 100px;
+        margin:0 5px 0;
+
+        @include custom_min(992px){
+            height: 50px;
+            width: 50px;
+        }
+
+    }
+
+    input:checked + label{
+        position: relative;
+        &::before{
+            content:"";
+            display:block;
+            position: absolute;
+            height:34px;
+            width:34px;
+            top:50%;
+            left:50%;
+            border:2px solid $primary;
+            border-radius: 100px;
+            transform:translateY(-50%) translateX(-50%);
+
+
+            @include custom_min(992px){
+                height: 54px;
+                width: 54px;
+            }
+        }
+    }
+}

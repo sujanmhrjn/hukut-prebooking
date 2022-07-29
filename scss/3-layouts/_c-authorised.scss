@@ -1,0 +1,17 @@
+.c-authorised{
+    font-weight: 300;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+
+    @include custom_min(992px){
+        font-size: 24px;
+        img{
+            max-width: 40px;
+            flex:0 0 40px;
+            position: relative;
+            top:-2px; 
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.c-btn{
+    font-weight: 600;
+    min-width: 164px;
+    padding: 8px 10px;
+
+    &.btn-primary{
+        background-color: $primary;
+    }
+    &.btn-disabled{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    @include custom_min(992px){
+        font-size: 20px;
+        min-width: 240px;
+    }
+}

@@ -1,0 +1,157 @@
+.c-content{
+    .text-underline{
+        border-bottom: 1px solid $primary;
+        @include custom_min(768px){
+           border-bottom-width:3px;
+        }
+    }
+    .content-body{
+
+        h3{
+            margin-bottom:30px;
+            @include custom_min(992px){
+                font-size: 30px;
+                margin-bottom: 80px;
+            }
+        }
+        .c-card{
+            .card-image{
+                text-align: center;
+                .image{
+                    position: relative;
+                    display: inline-block;
+                }
+            }
+            .card-float-image{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                max-width: 56px;
+                @include custom_min(992px){
+                    max-width: 80px;
+                }
+            }
+        }
+        .text-gift{
+            @include custom_min(992px){
+                font-size: 16px;
+            }
+        }
+        .product-variant{
+            label{
+                font-size: 12px;
+            }
+            .price{
+                font-size: 12px;
+                font-weight: 500;
+                span{
+                    font-size:26px;
+                }
+            }
+
+            &.storage{
+
+                position: relative;
+                label{
+                    max-width:125px;
+                    border:1px solid $text;
+                    border-radius: 5px;
+                    font-size: 10px;
+                    padding:6px 10px;
+                    display: block;
+                    &.selected{
+                        position: relative;
+                        border-color:$primary;
+                        &::after{
+                            content:"";
+                            display: block;
+                            height: 14px;
+                            width: 14px;
+                            background-color: $yellow;
+                            background-image:url('../images/icon-check.svg');
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: 6px 4px;
+                            border-radius: 100px;
+                            border:1px solid $primary;
+                            position: absolute;
+                            top:-6px;
+                            right:-6px;
+                        }
+                    }
+                }
+                input{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    height: 0;
+                    width: 0;
+                    opacity: 0;
+                }
+                input:checked + label{
+                    position: relative;
+                    border-color:$primary;
+                    &::after{
+                        content:"";
+                        display: block;
+                        height: 14px;
+                        width: 14px;
+                        background-color: $yellow;
+                        background-image:url('../images/icon-check.svg');
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 6px 4px;
+                        border-radius: 100px;
+                        border:1px solid $primary;
+                        position: absolute;
+                        top:-6px;
+                        right:-6px;
+                    }
+                }
+            }
+
+            @include custom_min(992px){
+                label{
+                    font-size: 18px;
+                }
+                &.storage{
+                    label{
+                        max-width: 230px;
+                        font-size: 18px;
+                        border-width: 3px;
+                        padding:8px 12px;
+                        border-radius: 10px;
+                    
+                        
+                        &.selected{
+                            &::after{
+                                height:30px;
+                                width: 30px;
+                                border-width: 3px;
+                                background-size: 16px 17px;
+                                top:-10px;
+                                right:-10px;
+                            }
+                        }
+                    }
+                    input:checked + label{
+                        &::after{
+                            height:30px;
+                            width: 30px;
+                            border-width: 3px;
+                            background-size: 16px 17px;
+                            top:-10px;
+                            right:-10px;
+                        }
+                    }
+                }
+                .price{
+                    font-size: 20px;
+                    span{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

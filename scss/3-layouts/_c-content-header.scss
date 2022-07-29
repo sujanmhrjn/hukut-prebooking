@@ -1,0 +1,21 @@
+.c-content-header{
+    margin-bottom:30px;
+    .title{
+        margin:0 ;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    @include custom_min(992px){
+        margin-bottom:50px;
+        .title{
+            font-size: 50px;
+        }
+        .sub-title{
+            font-size: 30px;
+            img{
+                width:32px;
+            }
+        }
+    }
+}
