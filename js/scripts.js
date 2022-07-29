@@ -1,8 +1,10 @@
 const scripts = {
     productCarousel(){
-        $('.carousel').carousel({
-            interval: false
-          })
+        $('.carousel').each(function(){
+            $(this).carousel({
+                interval: false
+            });
+        });
     },
     colorVariantSelection(){
         $(document).on("click",".c-checkbox-color-variant button", function(){
