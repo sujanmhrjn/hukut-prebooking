@@ -1,11 +1,14 @@
 .c-delivery{
-    font-size: 12px;
+    font-size: 14px;
     position: relative;
-    padding-left:25px;
+    padding-left:35px;
     .icon{
         position: absolute;
         left:0;
         top:0;
+        img{
+            width:25px;
+        }
     }
     .title{
         font-weight: 500;

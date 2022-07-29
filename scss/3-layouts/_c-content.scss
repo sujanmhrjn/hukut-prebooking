@@ -34,32 +34,33 @@
             }
         }
         .text-gift{
+            font-size: 14px;
             @include custom_min(992px){
                 font-size: 16px;
             }
         }
         .product-variant{
-            label{
-                font-size: 12px;
-            }
+         
             .price{
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 500;
+                
                 span{
                     font-size:26px;
                 }
             }
 
             &.storage{
-
+        
                 position: relative;
                 label{
-                    max-width:125px;
+                    max-width:180px;
                     border:2px solid $text;
                     border-radius: 5px;
-                    font-size: 10px;
+                    font-size: 14px;
                     padding:6px 10px;
                     display: block;
+                    cursor: pointer;
                     &.selected{
                         position: relative;
                         border-color:$primary;
@@ -112,9 +113,7 @@
             }
 
             @include custom_min(992px){
-                label{
-                    font-size: 18px;
-                }
+               
                 &.storage{
                     label{
                         max-width: 230px;

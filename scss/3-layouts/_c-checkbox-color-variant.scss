@@ -9,8 +9,8 @@
     }
 
     button{
-        height: 30px;
-        width:30px;
+        height: 40px;
+        width:40px;
         border:3px solid #fff;
         display: block;
         border-radius: 100px;
@@ -25,13 +25,14 @@
 
     button{
         position: relative;
+        cursor: pointer;
         &.active{
             &::before{
                 content:"";
                 display:block;
                 position: absolute;
-                height:34px;
-                width:34px;
+                height:44px;
+                width:44px;
                 top:50%;
                 left:50%;
                 border:3px solid $primary;
@@ -49,6 +50,11 @@
     .variant-label{
         text-align:left;
         display: block;
+        font-size: 14px;
+        @include custom_min(992px){
+          font-size: 18px ;
+        }
+
     }
     .variant-value{
         position: absolute;
