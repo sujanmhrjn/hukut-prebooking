@@ -110,13 +110,13 @@
                         &::after{
                             content:"";
                             display: block;
-                            height: 14px;
-                            width: 14px;
+                            height: 24px;
+                            width: 24px;
                             background-color: $yellow;
                             background-image:url('../images/icon-check.svg');
                             background-repeat: no-repeat;
                             background-position: center center;
-                            background-size: 6px 4px;
+                            background-size: 12px 10px;
                             border-radius: 100px;
                             border:2px solid $primary;
                             position: absolute;
@@ -139,18 +139,18 @@
                     &::after{
                         content:"";
                         display: block;
-                        height: 14px;
-                        width: 14px;
+                        height: 24px;
+                        width: 24px;
                         background-color: $yellow;
                         background-image:url('../images/icon-check.svg');
                         background-repeat: no-repeat;
                         background-position: center center;
-                        background-size: 6px 4px;
+                        background-size: 12px 10px;
                         border-radius: 100px;
                         border:2px solid $primary;
                         position: absolute;
-                        top:-6px;
-                        right:-6px;
+                        top:-8px;
+                        right:-8px;
                     }
                 }
             }
