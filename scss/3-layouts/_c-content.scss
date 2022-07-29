@@ -17,10 +17,17 @@
         .c-card{
             .card-image{
                 text-align: center;
+                
                 .image{
                     position: relative;
                     display: inline-block;
                 }
+            }
+            .card-img-top{
+                padding:15px 0;
+             
+                    display: block;
+             
             }
             .card-float-content{
                 position: absolute;
@@ -40,13 +47,14 @@
                     text-align: left;
                     padding:0 5px;
                     .text-title{
-                        font-size: 12px;
+                        font-size: 10px;
+                        font-weight: 600;
                         margin: 0 0 2px;
                     }
                     p{
                         font-size: 10px;
                         margin: 0;
-                        line-height: 1;
+                        line-height: 1.2;
                         strong{
                             font-weight: 500;
                         }
