@@ -62,7 +62,17 @@
                 }
 
                 @include custom_min(992px){
-               
+                    img{
+                        max-width: 80px;
+                    }
+                    .text{
+                        .text-title{
+                            font-size: 14px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }

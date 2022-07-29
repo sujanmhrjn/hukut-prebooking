@@ -33,12 +33,17 @@ const scripts = {
         $(document).on("click",".storage label", function(){
             
             var parent =  $(this).closest("form");
+
+            // remove all checked ones
+            $(".storage input").prop("checked", false);
+            $("form .c-btn").addClass("btn-disabled");
             if($(this).parent().find("input").is(":checked")){
                 parent.find(".c-btn").addClass("btn-disabled");
+                // $(this).parent().find("input").prop("checked",false);
             }else{
+                // $(this).parent().find("input").prop("checked",true);
                 parent.find(".c-btn").removeClass("btn-disabled");
-            }
-     
+            }     
         });
     }
 }
