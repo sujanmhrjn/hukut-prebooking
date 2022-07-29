@@ -64,145 +64,199 @@
 
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-5 mb-36">
-                            <div class="card c-card" >
-                                <div class="card-image">
-                                    <div class="image">
-                                        <picture class="card-img-top" alt="...">
-                                            <source media="(min-width:992px)" srcset="images/macbook-air-lg.png">
-                                            <img src="images/macbook-air-sm.png" alt="macbook" style="width:auto;">
-                                        </picture>
-                                        <div class="card-float-image">
-                                            <img src="images/gift-box.png" alt="gift"/>
+                            <form method="get">
+                                <div class="card c-card" >
+                                    <div class="card-image">
+                                        <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel" interval="false">
+                                            
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-midnight.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-starlight.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-spacegray.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-silver.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="card-float-image">
+                                                    <img src="images/gift-box.png" alt="gift"/>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class=" product-variant mb-18 mb-lg-30">
+                                                
+                                                <div class="c-checkbox-color-variant">
+                                                    <label class="variant-label">Midnight</label>
+                                                    <input type="text" name="variant" value="midnight" class="variant-value"/>
+                                                    <div class="variants carousel-indicators">
+                                                        <button data-value="midnight" data-title="Midnight" style="background-color:#2F3641"  data-target="#carousel1" data-slide-to="0" class="active"/>                                   
+                                                        <button  data-value="starlight" data-title="Starlight" style="background-color:#F0E5D2" data-target="#carousel1" data-slide-to="1" />    
+                                                        <button  data-value="space-grey" data-title="Space Gray" style="background-color:#7D7E80" data-target="#carousel1" data-slide-to="2" />
+                                                        <button  data-value="silver" data-title="Sliver" style="background-color:#E3E4E6" data-target="#carousel1" data-slide-to="3" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.product-variant -->
                                         </div>
+                        
+                                       
+                            
                                     </div>
-                                </div>
-                                <div class="card-body">
-                                    <form method="get" class="mb-24  mb-lg-40">
-                                        <div class="product-variant mb-18 mb-lg-30">
-                                            <label>Midnight</label>
-                                            <div class="c-checkbox-color-variant">
-                                                <input type="radio" name="color" value="midnight-black"  checked="checked" id="color-1-1"/>
-                                                <label for="color-1-1" data-title="Midnight" style="background-color:#2F3641"></label>
+                                    <div class="card-body">
+                                        
+                                          
+                                            <div class="product-variant storage mb-14 mb-lg-30">
+                                                <input type="checkbox" name="unified-memory" value="8-256" id="unified-memory">
+                                                <label for="unified-memory">8GB Uninfied Memory 256 GB SSD Storage</label>
+                                            </div>
+                                            <!-- /.product-variant -->
+                                            <div class="product-variant ">
+                                            <div class="price">Rs. <span>189,990</span></div> 
+                                            </div>
+                                            <div class="text-primary font-medium text-sm text-gift mb-14">Free Gift worth Rs. 5000</div>
 
-                                                <input type="radio" name="color" value="starlight" id="color-1-2"/>
-                                                <label for="color-1-2" data-title="Starlight" style="background-color:#F0E5D2"></label>
+                                            <button type="submit" class="c-btn btn btn-primary btn-disabled  mb-24  mb-lg-40">Pre-Book</button>
+                                    
 
-                                                <input type="radio" name="color" value="space-grey" id="color-1-3"/>
-                                                <label for="color-1-3" data-title="Space Gray" style="background-color:#7D7E80"></label>
-
-                                                <input type="radio" name="color" value="silver" id="color-1-4"/>
-                                                <label for="color-1-4" data-title="Sliver" style="background-color:#E3E4E6"></label>
+                                        <div class="mb-4 c-delivery">
+                                            <div class="icon">
+                                                <img src="images/icon-package.svg" />
+                                            </div>
+                                            <div class="title">Ships:</div>
+                                            <div class="description">
+                                                1-2 Weeks<br/>
+                                                Free Shipping<br/> all over Nepal
                                             </div>
                                         </div>
-                                        <!-- /.product-variant -->
-                                        <div class="product-variant storage mb-14 mb-lg-30">
-                                            <input type="checkbox" name="unified-memory" value="8-256" id="unified-memory">
-                                            <label for="unified-memory">8GB Uninfied Memory 256 GB SSD Storage</label>
-                                        </div>
-                                        <!-- /.product-variant -->
-                                        <div class="product-variant ">
-                                           <div class="price">Rs. <span>189,990</span></div> 
-                                        </div>
-                                        <div class="text-primary font-medium text-sm text-gift mb-14">Free Gift worth Rs. 5000</div>
 
-                                        <button type="submit" class="c-btn btn btn-primary btn-disabled">Pre-Book</button>
-                                    </form>
-
-                                    <div class="mb-4 c-delivery">
-                                        <div class="icon">
-                                            <img src="images/icon-package.svg" />
-                                        </div>
-                                        <div class="title">Ships:</div>
-                                        <div class="description">
-                                            1-2 Weeks<br/>
-                                            Free Shipping<br/> all over Nepal
-                                        </div>
-                                    </div>
-
-                                    <div class=" c-delivery">
-                                        <div class="icon">
-                                            <img src="images/icon-bag.svg" />
-                                        </div>
-                                        <div class="title">Pickup:</div>
-                                        <div class="description">
-                                            Hukut Store<br/>
-                                            Prachin Galli, Mid Baneshwor<br/>
-                                            <a href="#">Location</a>
+                                        <div class=" c-delivery">
+                                            <div class="icon">
+                                                <img src="images/icon-bag.svg" />
+                                            </div>
+                                            <div class="title">Pickup:</div>
+                                            <div class="description">
+                                                Hukut Store<br/>
+                                                Prachin Galli, Mid Baneshwor<br/>
+                                                <a href="#">Location</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <!-- /.col-12 -->
                         <div class="col-12 col-md-5 mb-36">
-                            <div class="card c-card" >
-                                <div class="card-image">
-                                    <div class="image">
-                                        <picture class="card-img-top" alt="...">
-                                            <source media="(min-width:992px)" srcset="images/macbook-air-lg.png">
-                                            <img src="images/macbook-air-sm.png" alt="macbook" style="width:auto;">
-                                        </picture>
-                                        <div class="card-float-image">
-                                            <img src="images/gift-box.png" alt="gift"/>
+                            <form method="get">
+                                <div class="card c-card" >
+                                    <div class="card-image">
+                                        <div id="carousel2" class="carousel slide carousel-fade" data-ride="carousel" interval="false">
+                                            
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-midnight.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-starlight.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-spacegray.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <picture class="card-img-top" alt="...">
+                                                        <!-- <source media="(min-width:992px)" srcset="images/macbook-air-lg.png"> -->
+                                                        <img src="images/macbook-air-silver.jpeg" alt="macbook" style="width:auto;">
+                                                    </picture>
+                                                </div>
+                                                <div class="card-float-image">
+                                                    <img src="images/gift-box.png" alt="gift"/>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class=" product-variant mb-18 mb-lg-30">
+                                                
+                                                <div class="c-checkbox-color-variant">
+                                                    <label class="variant-label">Midnight</label>
+                                                    <input type="text" name="variant" value="midnight" class="variant-value"/>
+                                                    <div class="variants carousel-indicators">
+                                                        <button data-value="midnight" data-title="Midnight" style="background-color:#2F3641"  data-target="#carousel2" data-slide-to="0" class="active"/>                                   
+                                                        <button  data-value="starlight" data-title="Starlight" style="background-color:#F0E5D2" data-target="#carousel2" data-slide-to="1" />    
+                                                        <button  data-value="space-grey" data-title="Space Gray" style="background-color:#7D7E80" data-target="#carousel2" data-slide-to="2" />
+                                                        <button  data-value="silver" data-title="Sliver" style="background-color:#E3E4E6" data-target="#carousel2" data-slide-to="3" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.product-variant -->
                                         </div>
+                        
+                                       
+                            
                                     </div>
-                                </div>
-                                <div class="card-body">
-                                    <form method="get" class="mb-24 mb-lg-40">
-                                        <div class="product-variant mb-18 mb-lg-30">
-                                            <label>Midnight</label>
-                                            <div class="c-checkbox-color-variant">
-                                                <input type="radio" name="color" value="midnight-black" checked="checked" id="color-2-1"/>
-                                                <label for="color-2-1" data-title="Midnight"  style="background-color:#2F3641"></label>
+                                    <div class="card-body">
+                                        
+                                          
+                                            <div class="product-variant storage mb-14 mb-lg-30">
+                                                <input type="checkbox" name="unified-memory" value="8-512" id="unified-memory2">
+                                                <label for="unified-memory2">8GB Uninfied Memory 512 GB SSD Storage</label>
+                                            </div>
+                                            <!-- /.product-variant -->
+                                            <div class="product-variant ">
+                                            <div class="price">Rs. <span>256,000</span></div> 
+                                            </div>
+                                            <div class="text-primary font-medium text-sm text-gift mb-14">Free Gift worth Rs. 5000</div>
 
-                                                <input type="radio" name="color" value="starlight" id="color-2-2"/>
-                                                <label for="color-2-2" data-title="Starlight" style="background-color:#F0E5D2"></label>
+                                            <button type="submit" class="c-btn btn btn-primary btn-disabled  mb-24  mb-lg-40">Pre-Book</button>
+                                    
 
-                                                <input type="radio" name="color" value="space-grey" id="color-2-3"/>
-                                                <label for="color-2-3" data-title="Space Gray" style="background-color:#7D7E80"></label>
-
-                                                <input type="radio" name="color" value="silver" id="color-2-4"/>
-                                                <label for="color-2-4" data-title="Sliver" style="background-color:#E3E4E6"></label>
+                                        <div class="mb-4 c-delivery">
+                                            <div class="icon">
+                                                <img src="images/icon-package.svg" />
+                                            </div>
+                                            <div class="title">Ships:</div>
+                                            <div class="description">
+                                                1-2 Weeks<br/>
+                                                Free Shipping<br/> all over Nepal
                                             </div>
                                         </div>
-                                        <!-- /.product-variant -->
-                                        <div class="product-variant storage mb-14  mb-lg-30">
-                                            <input type="checkbox" name="unified-memory" value="8-512" id="unified-memory-2">
-                                            <label for="unified-memory-2">8GB Uninfied Memory 512 GB SSD Storage</label>
-                                        </div>
-                                        <!-- /.product-variant -->
-                                        <div class="product-variant ">
-                                           <div class="price">Rs. <span>229,990</span></div> 
-                                        </div>
-                                        <div class="text-primary font-medium text-sm  text-gift mb-14">Free Gift worth Rs. 5000</div>
 
-                                        <button type="submit" class="c-btn btn btn-primary ">Pre-Book</button>
-                                    </form>
-
-                                    <div class="mb-4 c-delivery">
-                                        <div class="icon">
-                                            <img src="images/icon-package.svg" />
-                                        </div>
-                                        <div class="title">Ships:</div>
-                                        <div class="description">
-                                            1-2 Weeks<br/>
-                                            Free Shipping<br/> all over Nepal
-                                        </div>
-                                    </div>
-
-                                    <div class=" c-delivery">
-                                        <div class="icon">
-                                            <img src="images/icon-bag.svg" />
-                                        </div>
-                                        <div class="title">Pickup:</div>
-                                        <div class="description">
-                                            Hukut Store<br/>
-                                            Prachin Galli, Mid Baneshwor<br/>
-                                            <a href="#">Location</a>
+                                        <div class=" c-delivery">
+                                            <div class="icon">
+                                                <img src="images/icon-bag.svg" />
+                                            </div>
+                                            <div class="title">Pickup:</div>
+                                            <div class="description">
+                                                Hukut Store<br/>
+                                                Prachin Galli, Mid Baneshwor<br/>
+                                                <a href="#">Location</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <!-- /.col-12 -->
                     </div>

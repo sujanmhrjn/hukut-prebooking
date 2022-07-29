@@ -1,8 +1,18 @@
 const scripts = {
+    productCarousel(){
+        $('.carousel').carousel({
+            interval: false
+          })
+    },
     colorVariantSelection(){
-        $(document).on("click",".c-checkbox-color-variant label", function(){
+        $(document).on("click",".c-checkbox-color-variant button", function(){
             var title =  $(this).data('title');
-            $(this).closest(".c-checkbox-color-variant").prev('label').html(title);
+            var value =  $(this).data('value');
+            var label =  $(this).closest('.c-checkbox-color-variant').find(".variant-label");
+            var target =  $(this).closest('.c-checkbox-color-variant').find(".variant-value");
+            label.text(title);
+            target.val(value);
+            // $(this).closest(".c-checkbox-color-variant").prev('label').html(title);
         })
     },
 
@@ -34,6 +44,7 @@ const scripts = {
 }
 
 $(document).ready(function(){
+    scripts.productCarousel();
     scripts.colorVariantSelection();
     scripts.preBookButtonEnable();
 });

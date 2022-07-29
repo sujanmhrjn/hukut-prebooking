@@ -1,26 +1,21 @@
 .c-checkbox-color-variant{
     position: relative;
-    display: flex;
-    align-items: center;
-
-    input{
-        position: absolute;
-        opacity: 0;
-        height: 0;
-        width: 0;
-        top:0;
-        overflow: hidden;
-        opacity: 0;
+    .variants{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin:0;
+        justify-content: flex-start;
     }
 
-    label{
+    button{
         height: 30px;
         width:30px;
-        border:2px solid #fff;
+        border:3px solid #fff;
         display: block;
         border-radius: 100px;
         margin:0 5px 0;
-
+        padding:0;
         @include custom_min(992px){
             height: 50px;
             width: 50px;
@@ -28,25 +23,40 @@
 
     }
 
-    input:checked + label{
+    button{
         position: relative;
-        &::before{
-            content:"";
-            display:block;
-            position: absolute;
-            height:34px;
-            width:34px;
-            top:50%;
-            left:50%;
-            border:2px solid $primary;
-            border-radius: 100px;
-            transform:translateY(-50%) translateX(-50%);
+        &.active{
+            &::before{
+                content:"";
+                display:block;
+                position: absolute;
+                height:34px;
+                width:34px;
+                top:50%;
+                left:50%;
+                border:3px solid $primary;
+                border-radius: 100px;
+                transform:translateY(-50%) translateX(-50%);
 
 
-            @include custom_min(992px){
-                height: 54px;
-                width: 54px;
+                @include custom_min(992px){
+                    height: 54px;
+                    width: 54px;
+                }
             }
         }
+    }
+    .variant-label{
+        text-align:left;
+        display: block;
+    }
+    .variant-value{
+        position: absolute;
+        top:0;
+        left:0;
+        height: 0;
+        width: 0;
+        padding:0;
+        opacity: 0;
     }
 }
