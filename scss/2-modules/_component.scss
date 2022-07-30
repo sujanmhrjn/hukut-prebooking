@@ -34,13 +34,31 @@ a{
 .mb-36{
     margin-bottom: 36px;
 }
-
+.mb-42{
+    margin-bottom: 42px;
+}
+@include custom_min(576px){
+    .mb-sm-14{
+        margin-bottom:14px;
+    }
+}
+@include custom_min(768px){
+    .mb-md-20{
+        margin-bottom: 20px;
+    }
+}
 @include custom_min(992px){
     .mb-lg-40{
         margin-bottom: 40px;
     }
     .mb-lg-30{
         margin-bottom: 30px;
+    }
+    .text-lg-md{
+        font-size: 18px;
+    }
+    .text-lg-lg{
+        font-size: 24px;
     }
 }
 
