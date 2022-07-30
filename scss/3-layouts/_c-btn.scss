@@ -11,8 +11,21 @@
         opacity: 0.5;
         pointer-events: none;
     }
+
+    &.btn-sm{
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     @include custom_min(992px){
         font-size: 20px;
         min-width: 240px;
+
+        &.btn-sm{
+            font-size: 16px;
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
     }
 }

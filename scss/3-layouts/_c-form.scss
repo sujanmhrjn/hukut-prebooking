@@ -1,0 +1,17 @@
+.c-form{
+    .form-group{
+        margin-bottom:10px;
+        label{
+            font-size: 12px;
+            span{
+                color:#f00;
+            }
+        }
+        .form-control{
+            border:1px solid #c7c7c7;
+        }
+        .error{
+            color:#f00;
+        }
+    }
+}

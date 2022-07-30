@@ -47,6 +47,49 @@ const scripts = {
                 parent.find(".c-btn").removeClass("btn-disabled");
             }     
         });
+    },
+    validateForm(){
+        $("#validate-form").validate({
+            // in 'rules' user have to specify all the constraints for respective fields
+            
+            rules: {
+                fullname: "required",
+                mobileNumber: {
+                    minlength: 10,
+                    required: true,
+                    number: true
+                },
+                city: {
+                    required: true,
+                    minlength: 4
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                terms: {
+                    required: true,
+                }
+            },
+            // in 'messages' user have to specify message as per rules
+            messages: {
+                fullname: " Please enter your firstname",
+                mobileNumber: {
+                    required: "Please enter your mobile number",
+                    minlength: " Your mobile must consist 10 digits number",
+                    number: "Only numbers are allowed"
+                },
+                city: {
+                    required: "Please enter a city name",
+                    minlength: " Your city must be consist of at least 4 characters"
+                },
+                email: {
+                    required: "Please enter an email address",
+                    email: "Invalid email address"
+                },
+                terms: "Please accept our terms and condition"
+            }
+        });
     }
 }
 
@@ -54,4 +97,5 @@ $(document).ready(function(){
     scripts.productCarousel();
     scripts.colorVariantSelection();
     scripts.preBookButtonEnable();
+    scripts.validateForm();
 });

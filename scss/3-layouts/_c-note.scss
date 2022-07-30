@@ -1,0 +1,9 @@
+.c-note{
+    font-size: 14px;
+    @include custom_min(992px){
+        font-size: 16px;
+    }
+    a{
+        text-decoration: underline;
+    }
+}

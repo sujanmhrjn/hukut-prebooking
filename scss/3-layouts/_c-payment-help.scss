@@ -1,0 +1,74 @@
+.c-payment-help{
+    border-top:1px solid #F2F2F2;
+    margin-top:30px;
+    padding-top:30px;
+    .with-divider{
+        position: relative;
+        &::after{
+            content:"";
+            display: block;
+            border-right:1px solid #c7c7c7;
+            height: 100%;
+            position: absolute;
+            right:0px;
+            top:0;
+            bottom:0;
+        }
+    }
+    .content{
+        background-color: #F9F9F9;
+        padding:22px;
+        text-align: center;
+        .title{
+            font-weight: 700;
+            color:$primary;
+            margin-bottom:20px;
+            span{
+                border-bottom: 2px solid $primary;
+            }
+        }
+
+        .text-block{
+            .text-title{
+                display: inline-block;
+                background-color: $primary;
+                font-weight: 300;
+                color:#fff;
+                font-size: 14px;
+                padding:4px 15px;
+                margin-bottom: 15px;
+            }
+
+            .item{
+                position: relative;
+                padding-left:30px;
+                font-size: 14px;
+                text-align:left;
+                margin-bottom:15px;
+                .icon{
+                    max-width: 30px;
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    img{
+                        width:20px;
+                        max-width: 100%;
+                    }
+                }
+                .text{
+                    line-height: 1.2;
+                    a{
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size: 12px;
+                        font-weight: 300;
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
